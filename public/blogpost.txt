@@ -1,0 +1,31 @@
+Is it battle tested?
+What is the cost?
+What is the hiring pool like?
+How much initial and ongoing training will it require?
+What will the training cost in both time and money?
+How is it maintianed?
+How does it scale?
+How is it supported?
+What are the alternatives?
+
+Postgresql
+
+Postgresql is an open source SQL/relational database that has existed since 1996. It is stable, scalable and versatile. Since it's open source, it is free from restrictions and there are no vendors or corporations behind it. No company has any vested interest, so development is driven by and for the community & their interests.
+Postgres is a mature, battle tested db solution that is completely free to use (including commercial usage) - see the PostgreSQL license. https://opensource.org/licenses/postgresql
+
+Since PostgreSQL is a relational database management system, it adheres to the SQL standard and as such its hiring pool is quite robust as relational databases are ubiquitous in development. Devs with prior SQL experience (MySQL, SQL Server) will quickly get accustomed to PostgreSQL as they all use SQL and most conventions are carried across. 
+In terms of training time required, it would not take too much time to learn PostgreSQL. I would assume the training cost would be based on whether or not the trainee is familiar with RDBMSs, as devs familiar with other RDBMSs would not need much additional training to get familiar with Postgres
+Since Postgres is free, there is no monetary cost associated with training (unless one would like to purchase a training course/textbook for detailed guidance)
+
+Postgres is developed and maintained by the PostgreSQL Global Development Group - a network of over 650 skilled volunteers who are "passionate about relational database computing". It is supported by the PostgreSQL Globabl Development Group, which releases a new major version once a year, and minor versions quarterly. Each major version of postgresql is supported for 5 years after its initial release, after which it is considered EOL. The most recently released version is PostgreSQL 14
+
+Scalability
+Postgres is scalable - vertically at least. You can increase the amount of resources (CPU, RAM, Storage) alocated to the db and optimize the server in other ways (adding a cache, etc.) to increase performance. This is scaling up/vertical scaling. Postgres is not the best option for scaling out (horizontal scaling). Although there are nifty tools available like Citus (https://www.citusdata.com/product/community) that provide that functionality, in general NoSQL solutions are more suited to horizontal scaling.
+Here are some alternatives to Postgres: MySQL/MariaDB, SQLite, Microsoft SQL Server 
+
+Rspec
+What is it?
+
+Rspec is a testing framework for Ruby, created for behaviour driven development. It is an open source tool that is battle tested and easy for developers to integrate into a project. Rspec is maintained by open source contributors and provided under the MIT license so it is free to use, has robust support and well written documentation. Since it is free and has accessible documentation, it is relatively easy to learn and would has a low cost of initial/ongoing training. It is relatively easy to get started with rspec - wiht just two commands (gem install, rspec --init), you can get it configured within a project.
+ Rspec is quite popular and there are not many alternatives for TDD w Ruby/Rails so the hiring pool would be quite large and I think developers with Rspec knowledge would be valuable at any Ruby/Rails shop. Rspec is scalable - it can be integrated fairly easily into a CI/CD pipeline as the test suite (instead of minitest)
+Here are some Rspec alternatives: Cucumber, minitest
