@@ -1,0 +1,2 @@
+I didn't really understand the difference between merging vs rebasing, or really why rebasing was an option in the first place as it seemed to have the same end result as merging. After my conversation with Roger, I had a better grasp of both concepts.
+I guess my question would be when should I merge vs rebase? Are there situations where one option is more preferred over the other, or is it just based on the established convention/standard in my dev team?
