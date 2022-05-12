@@ -6,23 +6,36 @@ on:
 jobs:
   setup:
     runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+        - 5432:5432
+        # health check for postgres container
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out repo
+        uses: actions/checkout@v3
       - name: Set up Ruby
-        uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0.2'
-      - name: Install dependencies
-        run: bundle install
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - run: bundle exec rspec
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Setup test database, run tests
+        env:
+          RAILS_ENV: test
+          POSTGRES_HOST: localhost
+          POSTGRES_USER: postgres
+          POSTGRES__PASSWORD: postgres
+          POSTGRES_DB: blogist_test
+        run: bundle exec rspec
+      - name: Deploy To Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: blogist-app #Must be unique in Heroku
