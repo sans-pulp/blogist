@@ -26,14 +26,14 @@ jobs:
         with:
           ruby-version: '3.0.2'
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - name: Setup test database, run tests
-        env:
-          RAILS_ENV: test
-          POSTGRES_HOST: localhost
-          POSTGRES_USER: postgres
-          POSTGRES__PASSWORD: postgres
-          POSTGRES_DB: blogist_test
-        run: bundle exec rspec
+      # - name: Setup test database, run tests
+      #   env:
+      #     RAILS_ENV: test
+      #     POSTGRES_HOST: localhost
+      #     POSTGRES_USER: postgres
+      #     POSTGRES__PASSWORD: postgres
+      #     POSTGRES_DB: blogist_test
+      #   run: bundle exec rspec
       - name: Deploy To Heroku
         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
