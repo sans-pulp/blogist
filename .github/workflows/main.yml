@@ -33,18 +33,15 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
-      - name: Setup DB
+      - name: Setup DB & Run tests
         env:
           RAILS_ENV: test
           PGHOST: localhost
           PGUSER: postgres
           PGPASSWORD: postgres
           PGPORT: ${{job.services.postgres.ports[5432]}}
-        run: bin/rails db:create db:schema:load db:migrate
+        run: bin/rails db:create db:schema:load db:migrate bundle exec rspec
 
-      - name: Run Tests
-        run: bundle exec rspec
-        
       - name: Deploy To Heroku
         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
