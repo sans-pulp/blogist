@@ -394,11 +394,11 @@
         "lines": [
           1,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -427,25 +427,8 @@
           1,
           null
         ]
-      },
-      "/home/gloria/imposter_school/blogist/app/controllers/articles_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/gloria/imposter_school/blogist/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          0,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1652576744
+    "timestamp": 1652579179
   }
 }
