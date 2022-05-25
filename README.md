@@ -1,5 +1,9 @@
 # README
 
+![baseline-CI](https://github.com/gloe2019/blogist/actions/workflows/main.yml/badge.svg)
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

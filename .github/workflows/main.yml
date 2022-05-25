@@ -26,7 +26,6 @@ jobs:
         with:
           ruby-version: '3.0.2'
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      # - name: Setup test database, run tests
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -43,7 +42,7 @@ jobs:
         run: bin/rails db:create db:schema:load db:migrate && bundle exec rspec
 
       - name: Deploy To Heroku
-        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: blogist-app #Must be unique in Heroku
