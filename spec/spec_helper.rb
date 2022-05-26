@@ -17,6 +17,9 @@ require 'capybara/rspec'
 # Load + launch SimpleCov
 require 'simplecov'
 SimpleCov.start
+# Add Simplecov formatting step
+require 'simplecov-cobertura'
+SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
