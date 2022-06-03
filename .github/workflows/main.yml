@@ -32,18 +32,35 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
-      - name: Setup DB & Run tests
+      - name: Setup DB
         env:
           RAILS_ENV: test
           PGHOST: localhost
           PGUSER: postgres
           PGPASSWORD: postgres
           PGPORT: ${{job.services.postgres.ports[5432]}}
-        run: bin/rails db:create db:schema:load db:migrate && bundle exec rspec
+        run: bin/rails db:setup 
+        
+      - name: Run Tests
+        env:
+          RAILS_ENV: test
+          PGHOST: localhost
+          PGUSER: postgres
+          PGPASSWORD: postgres
+        run: bundle exec rspec
+      
+      - name: Send coverage reports to  Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          directory: ./coverage/
+          token: ${{secrets.CODECOV_TOKEN}}
+          # files: ./coverage/.resultset.json
+          name: codecov-test
+          verbose: true
 
       - name: Deploy To Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: blogist-app #Must be unique in Heroku
-          heroku_email: "gloedem@gmail.com"
+          heroku_email: ${{secrets.EMAIL_ADDRESS}}
