@@ -58,6 +58,13 @@ jobs:
           name: codecov-test
           verbose: true
 
+      - name:  Upload Coverage To Code Climate Coverage
+        uses: paambaati/codeclimate-action@v3.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{secrets.CODE_CLIMATE_ID}}
+        with:
+          coverageLocations: ${{github.workspace}}/coverage/coverage.xml:cobertura
+
       - name: Deploy To Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
