@@ -38,6 +38,8 @@ group :development, :test do
   gem 'simplecov', require: false
   # Simplecov-formatting
   gem 'simplecov-cobertura'
+  # Guard to automate test running
+  gem 'guard-rspec'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
