@@ -374,6 +374,8 @@
           null,
           1,
           null,
+          1,
+          null,
           null,
           null
         ]
@@ -390,15 +392,44 @@
           null
         ]
       },
+      "/home/gloria/imposter_school/blogist/spec/models/article_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/gloria/imposter_school/blogist/app/models/article.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/gloria/imposter_school/blogist/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/home/gloria/imposter_school/blogist/spec/requests/articles_spec.rb": {
         "lines": [
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -427,8 +458,40 @@
           1,
           null
         ]
+      },
+      "/home/gloria/imposter_school/blogist/app/controllers/articles_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/gloria/imposter_school/blogist/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1654393389
+    "timestamp": 1654399365
   }
 }
