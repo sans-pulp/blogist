@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # Change root
   root 'articles#index'
+  
+  resources :articles
+
+
 end
