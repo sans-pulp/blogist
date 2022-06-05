@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
   def welcome
-    render html: "Welcome to Blogist!"
+    render html: 'Welcome to Blogist!'
   end
 end
