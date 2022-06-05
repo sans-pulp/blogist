@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/runner/work/blogist/blogist/spec/helpers/articles_helper_spec.rb": {
+      "/home/gloria/imposter_school/blogist/spec/helpers/articles_helper_spec.rb": {
         "lines": [
           1,
           null,
@@ -20,7 +20,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/spec/rails_helper.rb": {
+      "/home/gloria/imposter_school/blogist/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -87,7 +87,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/environment.rb": {
+      "/home/gloria/imposter_school/blogist/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -96,7 +96,7 @@
           1
         ]
       },
-      "/home/runner/work/blogist/blogist/config/application.rb": {
+      "/home/gloria/imposter_school/blogist/config/application.rb": {
         "lines": [
           1,
           null,
@@ -138,7 +138,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/boot.rb": {
+      "/home/gloria/imposter_school/blogist/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -146,7 +146,7 @@
           1
         ]
       },
-      "/home/runner/work/blogist/blogist/config/environments/test.rb": {
+      "/home/gloria/imposter_school/blogist/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -210,7 +210,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/application_controller_renderer.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -222,7 +222,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/assets.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -240,7 +240,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/backtrace_silencers.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -252,7 +252,7 @@
           1
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/content_security_policy.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -286,7 +286,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/cookies_serializer.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -295,7 +295,7 @@
           1
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/filter_parameter_logging.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -305,7 +305,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/inflections.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -325,7 +325,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/mime_types.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -333,7 +333,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/permissions_policy.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -348,7 +348,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/initializers/wrap_parameters.rb": {
+      "/home/gloria/imposter_school/blogist/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -366,7 +366,7 @@
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/config/routes.rb": {
+      "/home/gloria/imposter_school/blogist/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -374,23 +374,22 @@
           null,
           1,
           null,
-          null,
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/app/helpers/application_helper.rb": {
+      "/home/gloria/imposter_school/blogist/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/app/helpers/articles_helper.rb": {
+      "/home/gloria/imposter_school/blogist/app/helpers/articles_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/spec/requests/articles_spec.rb": {
+      "/home/gloria/imposter_school/blogist/spec/requests/articles_spec.rb": {
         "lines": [
           1,
           null,
@@ -399,27 +398,27 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/runner/work/blogist/blogist/spec/tasks/basic_math_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/runner/work/blogist/blogist/spec/views/articles/index.html.erb_spec.rb": {
+      "/home/gloria/imposter_school/blogist/spec/tasks/basic_math_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/gloria/imposter_school/blogist/spec/views/articles/index.html.erb_spec.rb": {
         "lines": [
           1,
           null,
@@ -429,6 +428,6 @@
         ]
       }
     },
-    "timestamp": 1654230863
+    "timestamp": 1654390850
   }
 }
