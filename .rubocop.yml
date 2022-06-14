@@ -11,3 +11,9 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+RSpec/FilePath:
+  SpecSuffixOnly: true
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: false

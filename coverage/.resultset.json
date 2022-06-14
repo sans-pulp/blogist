@@ -1,18 +1,43 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/gloria/imposter_school/blogist/spec/helpers/articles_helper_spec.rb": {
+      "/home/gloria/imposter_school/blogist/spec/models/article_spec.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
           1,
           null,
           null,
           null,
+          1,
+          1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
           null,
           null,
           null,
@@ -371,12 +396,8 @@
           1,
           null,
           null,
-          null,
           1,
-          null,
           1,
-          null,
-          null,
           null
         ]
       },
@@ -392,24 +413,10 @@
           null
         ]
       },
-      "/home/gloria/imposter_school/blogist/spec/models/article_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/home/gloria/imposter_school/blogist/app/models/article.rb": {
         "lines": [
+          1,
+          1,
           1,
           null
         ]
@@ -420,78 +427,8 @@
           1,
           null
         ]
-      },
-      "/home/gloria/imposter_school/blogist/spec/requests/articles_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/gloria/imposter_school/blogist/spec/tasks/basic_math_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/gloria/imposter_school/blogist/spec/views/articles/index.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/gloria/imposter_school/blogist/app/controllers/articles_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/gloria/imposter_school/blogist/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1654399365
+    "timestamp": 1654649426
   }
 }
