@@ -10,8 +10,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    # add slug to article...
-    @article.slug = gen_slug(@article)
+
     if @article.save
       redirect_to @article # use redirect_to when mutating app state, rather than render...
     else
@@ -41,13 +40,7 @@ class ArticlesController < ApplicationController
   private
 
   def set_article
-    @article = Article.find_by(slug: params[:slug])
-  end
-
-  def gen_slug(article)
-    random_id = SecureRandom.urlsafe_base64(4)
-    title_slug = article.title.downcase.tr(' ', '-')
-    [random_id, title_slug].join('-')
+    @article = Article.find(params[:id])
   end
 
   def article_params
