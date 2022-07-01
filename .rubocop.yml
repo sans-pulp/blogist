@@ -9,5 +9,14 @@ AllCops:
 Style/Documentation:
   Enabled: false
 
+Style/EmptyMethod:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
+  Enabled: false
+
+RSpec/FilePath:
+  SpecSuffixOnly: true
+
+Rails/UniqueValidationWithoutIndex:
   Enabled: false
