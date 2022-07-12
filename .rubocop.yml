@@ -20,3 +20,6 @@ RSpec/FilePath:
 
 Rails/UniqueValidationWithoutIndex:
   Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
