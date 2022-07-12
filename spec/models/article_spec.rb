@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Article, type: :model do
-
   it 'will not create without a title' do
     article = described_class.create({ body: 'This is a body....' })
     expect(article.valid?).to be false
@@ -22,7 +21,7 @@ RSpec.describe Article, type: :model do
                                         body: 'This is a body......aaskdlaslkdjaaslksalkareweenough?asdalkdasdlkj' })
     article_two = described_class.create({ title: 'First!',
                                            body: 'This is another bodyThis is a body......aaslaslkdjaadsdreweenough' })
-    expect(article_two.valid?).to be(false) 
+    expect(article_two.valid?).to be(false)
   end
 
   it 'will create with all required parameters' do

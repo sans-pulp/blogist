@@ -40,7 +40,12 @@ jobs:
           PGPASSWORD: postgres
           PGPORT: ${{job.services.postgres.ports[5432]}}
         run: bin/rails db:setup 
-        
+
+      - name: Compile assets
+        env:
+          RAILS_ENV: test
+        run: bin/rails assets:precompile
+
       - name: Run Tests
         env:
           RAILS_ENV: test

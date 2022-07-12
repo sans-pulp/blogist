@@ -18,7 +18,7 @@ RSpec.describe 'Articles', type: :request do
   describe 'POST /articles' do
     it 'create article, has http status code 302' do
       post articles_path params: { article: { title: 'Testing',
-                                              body: 'This is a body of text for the test article. Hopefully this is long enough' } }
+                                              body: 'This is a new body of text for the latest test article' } }
       expect(response).to have_http_status(:found)
       follow_redirect!
       expect(response).to render_template(:show)
@@ -134,9 +134,8 @@ RSpec.describe 'Articles', type: :request do
                        body: 'This is a body this is a body is a body is a this...' })
     end
 
-    it 'works' do
-      # patch "/articles/#{article.id}", params:  {title: 'Test #2'}
-      patch article_url(article), params:  { article: { title: 'Test #2' } }
+    it 'updates the article' do
+      patch article_url(article), params: { article: { title: 'Test #2' } }
       article.reload
       expect(response).to have_http_status(:found)
       expect(article.title).to eq 'Test #2'
