@@ -83,12 +83,6 @@ RSpec.describe 'Articles', type: :request do
       FactoryBot.create(:article)
     end
 
-    let(:invalid_article) do
-      {
-        body: 'This is another body...body another is this...'
-      }
-    end
-
     context 'with valid parameters' do
       before do
         put "/articles/#{article.id}",
