@@ -37,3 +37,6 @@ yarn-debug.log*
 
 # Ignore coverage folder.
 /coverage/*
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
