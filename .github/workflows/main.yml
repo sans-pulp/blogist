@@ -35,7 +35,7 @@ jobs:
       - name: Compile assets
         env:
           RAILS_ENV: test
-        run: bin/rails test:prepare
+        run: bin/rails tailwindcss:build
 
       - name: Setup DB
         env:
