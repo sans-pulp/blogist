@@ -19,7 +19,7 @@ require 'sprockets/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Blogit
+module Blogist
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
@@ -34,5 +34,8 @@ module Blogit
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Prevent sassc-rails from setting sass ass the css compressor, after removing sass-rails gem
+    config.assets.css_compressor = nil
   end
 end
